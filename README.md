@@ -1,5 +1,5 @@
 # React Hotel - Management
- Create frontend and backend with React, Node, Express, mongoDB. and learn to consume REST APIs with React Axios.
+ Create frontend and backend with React, Node, Express, mongoDB. To consume REST APIs with React Axios.
 
 ## Available Scripts
 

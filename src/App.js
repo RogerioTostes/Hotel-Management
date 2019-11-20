@@ -18,6 +18,10 @@ import CreateBedRoom from "./components/create-bedroom.component";
 import EditBedRoom from "./components/edit-bedroom.component";
 import BedRoomList from "./components/bedroom-list.component";
 
+import CreateReserve from "./components/create-reserve.component";
+import EditReserve from "./components/edit-reserve.component";
+import ReserveList from "./components/reserve-list.component";
+
 function App() {
   return (<Router>
     <div className="App">
@@ -32,35 +36,27 @@ function App() {
             </Navbar.Brand>
 
             <Nav className="justify-content-end">
-              {/* <Nav>
-                <Link to={"/create-client"} className="nav-link">
-                  Create Client
-                </Link>
-              </Nav> */}
-
-              {/* <Nav>
-                <Link to={"/edit-client/:id"} className="nav-link">
-                  Edit Client
-                </Link>
-              </Nav> */}
               <Nav>
-                {/* <Link to={"/client-list"} className="nav-link">
-                  Client List
-                </Link> */}
-
                 <NavDropdown title="Client" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/create-client"> Create Client</NavDropdown.Item>
                   <NavDropdown.Item href="/client-list">Client List</NavDropdown.Item>
                 </NavDropdown>
-
               </Nav>
+
               <Nav>
                 <NavDropdown title="BedRoom" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/create-bedroom"> Create BedRoom</NavDropdown.Item>
                   <NavDropdown.Item href="/bedroom-list">BedRoom List</NavDropdown.Item>
                 </NavDropdown>
-
               </Nav>
+
+              <Nav>
+                <NavDropdown title="Reserve" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/create-reserve"> Create Reserve</NavDropdown.Item>
+                  <NavDropdown.Item href="/reserve-list">Reserve List</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+
             </Nav>
 
           </Container>
@@ -73,14 +69,15 @@ function App() {
           <Col md={12}>
             <div className="wrapper">
               <Switch>
-                {/* <Route exact path='/' component={CreateClient} /> */}
                 <Route path="/create-client" component={CreateClient} />
                 <Route path="/edit-client/:id" component={EditClient} />
                 <Route path="/client-list" component={ClientList} />
-                {/* <Route exact path='/' component={CreateBedRoom} /> */}
                 <Route path="/create-bedroom" component={CreateBedRoom} />
                 <Route path="/edit-bedroom/:id" component={EditBedRoom} />
                 <Route path="/bedroom-list" component={BedRoomList} />
+                <Route path="/create-reserve" component={CreateReserve} />
+                <Route path="/edit-reserve/:id" component={EditReserve} />
+                <Route path="/reserve-list" component={ReserveList} />
               </Switch>
             </div>
           </Col>
