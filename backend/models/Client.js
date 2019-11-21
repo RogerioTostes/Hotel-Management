@@ -2,15 +2,24 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let clientSchema = new Schema({
+  id: {
+    type: String
+  },
   name: {
+    type: String
+  },
+  cpf: {
+    type: Number
+  },
+  address: {
     type: String
   },
   email: {
     type: String
   },
-  rollno: {
+  telephone: {
     type: Number
-  }
+    }
 }, {
     collection: 'clients'
   })

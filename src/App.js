@@ -72,9 +72,11 @@ function App() {
                 <Route path="/create-client" component={CreateClient} />
                 <Route path="/edit-client/:id" component={EditClient} />
                 <Route path="/client-list" component={ClientList} />
+
                 <Route path="/create-bedroom" component={CreateBedRoom} />
                 <Route path="/edit-bedroom/:id" component={EditBedRoom} />
                 <Route path="/bedroom-list" component={BedRoomList} />
+                
                 <Route path="/create-reserve" component={CreateReserve} />
                 <Route path="/edit-reserve/:id" component={EditReserve} />
                 <Route path="/reserve-list" component={ReserveList} />

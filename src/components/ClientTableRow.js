@@ -22,9 +22,12 @@ export default class ClientTableRow extends Component {
     render() {
         return (
             <tr>
+                <td>{this.props.obj.id}</td>
                 <td>{this.props.obj.name}</td>
+                <td>{this.props.obj.cpf}</td>
+                <td>{this.props.obj.address}</td>
                 <td>{this.props.obj.email}</td>
-                <td>{this.props.obj.rollno}</td>
+                <td>{this.props.obj.telephone}</td>
                 <td>
                     <Link className="edit-link" to={"/edit-client/" + this.props.obj._id}>
                         Edit

@@ -37,9 +37,12 @@ export default class ClientList extends Component {
       <Table striped bordered hover>
         <thead>
           <tr>
+            <th>ID</th>
             <th>Name</th>
+            <th>CPF</th>
+            <th>Address</th>
             <th>Email</th>
-            <th>Roll No</th>
+            <th>Telephone</th>
             <th>Action</th>
           </tr>
         </thead>
