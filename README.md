@@ -20,4 +20,3 @@ You will also see any lint errors in the console.
 - Open terminal run `nodemon server.js`
 - Open other terminal run `mongod`
 
-Open API URL on [http://localhost:4000/students](http://localhost:4000/students) to view it in the browser.
